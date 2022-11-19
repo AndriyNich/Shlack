@@ -1,0 +1,56 @@
+.line__wraper {
+  position: relative;
+  background-color: tomato;
+}
+.line__wraper::after, .line__wraper:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.line__wraper::after {
+  background-image: url("../images/V22.svg");
+}
+.line__wraper::before {
+  top: 0;
+  background-image: url("../images/V24.svg");
+}
+@media screen and (min-width: 480px) {
+  .line__wraper {
+    height: 12px;
+    width: 480px;
+  }
+  .line__wraper::after {
+    top: 6px;
+  }
+  .line__wraper::before, .line__wraper::after {
+    height: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .line__wraper {
+    height: 24px;
+    width: 768px;
+  }
+  .line__wraper::after {
+    top: 8px;
+  }
+  .line__wraper::before, .line__wraper::after {
+    height: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .line__wraper {
+    height: 29px;
+    width: 1280px;
+  }
+  .line__wraper::after {
+    top: 8px;
+  }
+  .line__wraper::before, .line__wraper::after {
+    height: 21px;
+  }
+}/*# sourceMappingURL=main.css.map */

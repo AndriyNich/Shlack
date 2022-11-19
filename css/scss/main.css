@@ -1,0 +1,27 @@
+.line__wraper {
+  position: relative;
+  background-color: tomato;
+  height: 40px;
+  width: 1280px;
+}
+
+.line__wraper::after, .line__wraper:before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.line__wraper::after {
+  height: 21px;
+  top: 8px;
+  background-image: url("../images/V22.svg");
+}
+.line__wraper::before {
+  height: 21px;
+  top: 0;
+  background-image: url("../images/V24.svg");
+}/*# sourceMappingURL=main.css.map */

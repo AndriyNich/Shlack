@@ -1,0 +1,69 @@
+.line__wraper {
+  position: relative;
+  background-color: tomato;
+
+  &::after,
+  &:before {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    // height: 21px;
+    // top: 8px;
+    background-image: url('../images/V22.svg');
+  }
+
+  &::before {
+    // height: 21px;
+    top: 0;
+    background-image: url('../images/V24.svg');
+  }
+
+  @media screen and (min-width: 480px) {
+    height: 12px;
+    width: 480px;
+
+    &::after {
+      top: 6px;
+    }
+
+    &::before,
+    &::after {
+      height: 12px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 24px;
+    width: 768px;
+
+    &::after {
+      top: 8px;
+    }
+
+    &::before,
+    &::after {
+      height: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 29px;
+    width: 1280px;
+
+    &::after {
+      top: 8px;
+    }
+
+    &::before,
+    &::after {
+      height: 21px;
+    }
+  }
+}
